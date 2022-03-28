@@ -1,0 +1,143 @@
+/* import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+/* variable */
+:root {
+  --main-blue: #0984e3;
+  --line: #b2bec3;
+  --button: #d63031;
+  --text: #2d3436;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+/*css reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  font-family: "Poppins", sans-serif;
+}
+h2 {
+  color: var(--text);
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+h3 {
+  color: var(--text);
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.mb-section {
+  margin-bottom: 30px;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+ul {
+  list-style: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+/* navbar */
+/* ada di css lain */
+.main {
+  position: relative;
+}
+/* main */
+aside {
+  width: 130px;
+  border: 2px solid var(--line);
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  position: fixed;
+  left: 5%;
+}
+
+/* product menu */
+.product-container {
+  left: calc(140px + 5%);
+  width: calc(95% - 140px);
+  position: relative;
+}
+
+/* menu ada di css lain */
+/* category list */
+.category-list ul li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+  padding-left: 10px;
+  cursor: pointer;
+}
+.category-active {
+  background-color: var(--line);
+  border-radius: 5px;
+  color: #fff;
+}
+.menu-wrapper {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 95%;
+  }
+  .product-container {
+    width: 100%;
+  }
+  aside {
+    position: static;
+    width: 100%;
+    padding: 0px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 4rem;
+    z-index: 10;
+    background-color: #fff;
+    padding: 5px;
+  }
+  .category-heading {
+    margin-bottom: 0;
+  }
+  .product-container {
+    position: static;
+    left: 0;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .category-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .category-list ul {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+    align-items: center;
+  }
+  .category-list ul li {
+    padding: 5px;
+    margin-bottom: 0;
+    border: none;
+  }
+}

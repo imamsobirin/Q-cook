@@ -1,0 +1,83 @@
+#navbar {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 10;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid var(--line);
+}
+#navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--button);
+}
+.search {
+  width: 60%;
+}
+.search form {
+  display: flex;
+  justify-content: center;
+}
+.search-button,
+.search-input {
+  padding: 0.25rem;
+  border: 1px solid var(--line);
+}
+.search-input {
+  border-radius: 10px 0 0 10px;
+  border-right: none;
+  width: 100%;
+  padding-left: 10px;
+}
+.search-button {
+  border-radius: 0 10px 10px 0;
+  padding: 0 0.5rem;
+}
+.account {
+  position: relative;
+}
+.account-details {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--line);
+}
+.account-details > div {
+  cursor: pointer;
+}
+.account .account-menu {
+  font-size: 1rem;
+  position: absolute;
+  top: 130%;
+  right: 0;
+  width: 140px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: right;
+  z-index: 100;
+  background-color: var(--line);
+  color: #fff;
+  display: none;
+}
+.account-menu i {
+  margin-left: 10px;
+}
+.main {
+  position: relative;
+}
+@media (max-width: 675px) {
+  .logo {
+    display: none;
+  }
+  .search {
+    width: 70%;
+  }
+}

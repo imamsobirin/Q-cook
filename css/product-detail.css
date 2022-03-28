@@ -1,0 +1,106 @@
+/* product header */
+.product-container {
+  margin-top: 30px;
+}
+.product-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+.product-img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+}
+/* deskripsi produk */
+.product-headline {
+  width: 350px;
+  padding: 20px;
+  border: 2px solid var(--line);
+  border-radius: 10px;
+}
+.product-title {
+  font-size: 1.75rem;
+}
+.product-price {
+  font-size: 1.5rem;
+  color: var(--button);
+}
+.product-description {
+  padding: 10px;
+  margin-top: 20px;
+  border-top: 2px solid var(--line);
+}
+/* tombol beli */
+.counter {
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  border: 2px solid var(--line);
+}
+.product-count {
+  text-align: center;
+}
+.product-count span {
+  font-size: 1.5rem;
+  border: 1px solid var(--line);
+  padding: 0 5px;
+}
+.product-count input {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 30%;
+  border: 1px solid var(--line);
+  margin: 20px 0;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.button .btn {
+  margin-top: 30px;
+  width: 40%;
+  padding: 0.6rem 0;
+  border-radius: 5px;
+  color: #fff;
+}
+.add-to-cart-button {
+  background-color: var(--main-blue);
+}
+.check-out {
+  background-color: var(--button);
+}
+
+/* product detail */
+.product-detail {
+  padding: 30px 0;
+  margin-top: 30px;
+  border-top: 2px solid var(--line);
+}
+h4 {
+  font-size: 1.2rem;
+}
+.include {
+  list-style: circle;
+  list-style-position: inside;
+}

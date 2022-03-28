@@ -1,0 +1,253 @@
+/* import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+/* variable */
+:root {
+  --main-blue: #0984e3;
+  --line: #b2bec3;
+  --button: #d63031;
+  --text: #2d3436;
+}
+/*css reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.h2 {
+  color: var(--text);
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2rem;
+}
+.h3 {
+  color: var(--text);
+  font-size: 1rem;
+}
+.mb-inner,
+.mb-section {
+  margin-bottom: 20px;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+.p-add {
+  padding-top: 80px;
+}
+/* up arrow */
+.up-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 3rem;
+  opacity: 0.6;
+  color: var(--text);
+}
+.up-arrow:hover {
+  opacity: 1;
+}
+
+/* navbar */
+#navbar {
+  position: sticky;
+  top: 0;
+  background-color: var(--button);
+  z-index: 10;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: #fff;
+  position: relative;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.nav-list ul {
+  display: flex;
+}
+.nav-list ul li {
+  margin: 0 15px;
+}
+.btn-singin {
+  padding: 0.2rem 1.5rem;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  background-color: #fff;
+  color: var(--button);
+}
+.burger-menu {
+  font-size: 1.5rem;
+  display: none;
+}
+@media (max-width: 675px) {
+  .container {
+    width: 95%;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .nav-list {
+    position: absolute;
+    top: 100%;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--line);
+    width: calc(100% * 1.05);
+    display: none;
+  }
+  .nav-list ul {
+    display: block;
+    text-align: center;
+  }
+  .btn-singin {
+    padding: 0.2rem 1.5rem;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    color: var(--button);
+  }
+  .navlink:hover {
+    color: var(--button);
+  }
+}
+/* home section*/
+.home {
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  height: 95vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.home img {
+  display: block;
+  height: 400px;
+  object-fit: contain;
+  position: relative;
+  bottom: 0;
+  margin: 20px auto 0;
+}
+.home-button {
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  background-color: var(--button);
+  color: #fff;
+}
+
+/* category section */
+.category {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+.category-card {
+  text-align: center;
+  border: 1px solid var(--button);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.category-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+@media (max-width: 675px) {
+  .home {
+    flex-direction: column-reverse;
+  }
+  .category {
+    width: 100%;
+    overflow-x: scroll;
+    gap: 20px;
+    background-color: #fff;
+  }
+  .h2 {
+    font-size: 1.75rem;
+  }
+  .menu-wrapper {
+    overflow-x: scroll;
+    gap: 30px;
+    flex-wrap: nowrap;
+  }
+}
+
+/* menu */
+/* ada di css lain */
+.show-more-btn {
+  background-color: var(--button);
+  color: #fff;
+  padding: 0.5rem;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+/* about us */
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.about-wrapper:nth-child(3) {
+  flex-direction: row-reverse;
+}
+.about-illustration {
+  width: 300px;
+  height: auto;
+}
+.about-description {
+  padding: 10px 20px;
+  border: 2px solid var(--line);
+  border-radius: 5px;
+  width: 350px;
+}
+.about-description h3 {
+  font-size: 1.5rem;
+  color: var(--button);
+}
+@media (max-width: 675px) {
+  .about-wrapper,
+  .about-wrapper:nth-child(3) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .about-illustration {
+    width: 250px;
+  }
+  .about-description {
+    width: 80%;
+  }
+  .about-description h3 {
+    font-size: 1.2;
+  }
+}
+/* footer */
+/* ada di file footer.css */

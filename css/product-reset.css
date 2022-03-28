@@ -1,0 +1,44 @@
+/* import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+/* variable */
+:root {
+  --main-blue: #0984e3;
+  --line: #b2bec3;
+  --button: #d63031;
+  --text: #2d3436;
+}
+/*css reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  font-family: "Poppins", sans-serif;
+}
+h2 {
+  color: var(--text);
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+h3 {
+  color: var(--text);
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.mb-section {
+  margin-bottom: 30px;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+ul {
+  list-style: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
