@@ -49,6 +49,7 @@
   font-size: 1.5rem;
   border: 1px solid var(--line);
   padding: 0 5px;
+  cursor: pointer;
 }
 .product-count input {
   font-size: 1.5rem;
