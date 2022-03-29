@@ -194,6 +194,9 @@ ul {
     gap: 30px;
     flex-wrap: nowrap;
   }
+  .home img {
+    width: 100%;
+  }
 }
 
 /* menu */

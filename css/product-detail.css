@@ -104,3 +104,28 @@ h4 {
   list-style: circle;
   list-style-position: inside;
 }
+
+@media (max-width: 1000px) {
+  .product-header {
+    display: block;
+    position: relative;
+  }
+  .product-headline {
+    margin-top: 20px;
+  }
+  .counter {
+    position: absolute;
+    right: 0;
+    top: 320px;
+  }
+}
+@media (max-width: 675px) {
+  .product-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .counter {
+    position: static;
+  }
+}
