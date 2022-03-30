@@ -116,13 +116,9 @@ if (categoryArr.length === 0) {
   });
 }
 
-let menuId = 0;
-export let menuClicked;
-
 menuWrapper.addEventListener("click", (e) => {
-  menuId = getMenuId(e);
-  window.location.href = "./product-detail.html";
-  menuClicked = menu.filter((menu) => menu.id == menuId);
+  let menuId = getMenuId(e);
+  window.location.href = "./product-detail.html?id=" + menuId;
 });
 
 //mendapat product id

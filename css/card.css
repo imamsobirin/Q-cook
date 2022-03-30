@@ -59,15 +59,3 @@
 .add-to-cart-button:hover {
   opacity: 1;
 }
-
-@media (max-width: 675px) {
-  .menu-card {
-    width: 180px;
-  }
-  .menu-cover img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-  }
-}

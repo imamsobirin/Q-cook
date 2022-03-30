@@ -129,4 +129,11 @@ h4 {
   .counter {
     position: static;
   }
+  .product-headline {
+    width: 95%;
+  }
+  .product-img img {
+    width: 250px;
+    height: 250px;
+  }
 }
