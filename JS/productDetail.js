@@ -27,6 +27,8 @@ productDescription.innerHTML = description;
 content.forEach((bahan) => {
   include.innerHTML += `<li>${bahan}</li>`;
 });
+// merubah title document
+document.title = name;
 
 let jumlah = 1;
 jumlahBeli.value = jumlah;
