@@ -118,7 +118,10 @@ if (categoryArr.length === 0) {
 
 menuWrapper.addEventListener("click", (e) => {
   let menuId = getMenuId(e);
-  window.location.href = "./product-detail.html?id=" + menuId;
+  console.log(e.target.classList);
+  if (e.target.parentElement.classList.contains(menuId)) {
+    window.location.href = "./product-detail.html?id=" + menuId;
+  }
 });
 
 //mendapat product id
